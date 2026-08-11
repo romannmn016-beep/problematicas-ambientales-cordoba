@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f7f5;
+color: #26352d;
+line-height: 1.6;
+}
+
+/* =========================
+ENCABEZADO
+========================= */
+
+.encabezado {
+width: 100%;
+height: 70px;
+
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+padding: 0 7%;
+
+background-color: white;
+
+border-bottom: 1px solid #dce5df;
+
+position: relative;
+z-index: 10;
+}
+
+.logo {
+font-size: 22px;
+font-weight: bold;
+color: #23613c;
+}
+
+nav {
+display: flex;
+gap: 30px;
+}
+
+nav a {
+text-decoration: none;
+color: #26352d;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #2f7d4a;
+}
+
+/* =========================
+PORTADA
+========================= */
+
+.portada {
+min-height: 600px;
+
+display: flex;
+align-items: center;
+
+padding: 80px 8%;
+
+background-image:
+    linear-gradient(
+        rgba(20, 50, 35, 0.65),
+        rgba(20, 50, 35, 0.65)
+    ),
+    url("../img/cordoba.jpg");
+
+background-size: cover;
+background-position: center;
+
+color: white;
+
+}
+
+.contenido-portada {
+max-width: 700px;
+}
+
+.subtitulo {
+font-size: 14px;
+letter-spacing: 3px;
+margin-bottom: 15px;
+}
+
+.portada h1 {
+font-size: 55px;
+line-height: 1.1;
+margin-bottom: 25px;
+}
+
+.portada p {
+font-size: 18px;
+margin-bottom: 30px;
+}
+
+/* =========================
+BOTONES
+========================= */
+
+.boton {
+display: inline-block;
+
+
+padding: 13px 25px;
+
+background-color: #2f7d4a;
+color: white;
+
+text-decoration: none;
+
+border-radius: 6px;
+
+font-weight: bold;
+
+}
+
+.boton:hover {
+background-color: #23613c;
+}
+
+.secundario {
+margin-top: 15px;
+}
+
+/* =========================
+SECCIONES
+========================= */
+
+.seccion {
+max-width: 1150px;
+
+
+margin: auto;
+
+padding: 90px 30px;
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+gap: 60px;
+
+align-items: center;
+
+
+}
+
+.etiqueta {
+color: #2f7d4a;
+
+
+font-size: 13px;
+
+font-weight: bold;
+
+letter-spacing: 2px;
+
+margin-bottom: 10px;
+
+
+}
+
+h2 {
+font-size: 36px;
+line-height: 1.2;
+
+margin-bottom: 20px;
+
+}
+
+.texto p {
+margin-bottom: 15px;
+}
+
+/* =========================
+DATO
+========================= */
+
+.dato {
+background-color: #e2eee6;
+
+padding: 45px;
+
+border-radius: 12px;
+
+border-left: 6px solid #2f7d4a;
+
+
+}
+
+.dato span {
+font-size: 45px;
+}
+
+.dato h3 {
+font-size: 25px;
+margin: 15px 0;
+}
+
+/* =========================
+MAPA
+========================= */
+
+.mapa {
+background-color: white;
+
+
+max-width: 100%;
+
+padding-left: 8%;
+padding-right: 8%;
+
+}
+
+.mapa-imagen img {
+width: 100%;
+
+
+display: block;
+
+border-radius: 12px;
+
+box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+
+}
+
+/* =========================
+TARJETAS
+========================= */
+
+.destacadas {
+max-width: 1150px;
+
+margin: auto;
+
+padding: 90px 30px;
+
+
+}
+
+.destacadas > h2 {
+margin-bottom: 40px;
+}
+
+.tarjetas {
+display: grid;
+
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 25px;
+
+
+}
+
+.tarjeta {
+background-color: white;
+
+
+padding: 30px;
+
+border-radius: 10px;
+
+border: 1px solid #e1e8e3;
+
+transition: 0.3s;
+
+}
+
+.tarjeta:hover {
+transform: translateY(-6px);
+
+box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+
+}
+
+.icono {
+font-size: 40px;
+
+
+margin-bottom: 15px;
+
+}
+
+.tarjeta h3 {
+font-size: 22px;
+
+
+margin-bottom: 10px;
+
+color: #23613c;
+
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+background-color: #1f3b2b;
+
+color: white;
+
+text-align: center;
+
+padding: 40px 20px;
+
+
+}
+
+footer h3 {
+margin-bottom: 10px;
+}
+
+footer p {
+font-size: 14px;
+
+margin: 5px;
+
+}
+
+/* =========================
+CELULARES
+========================= */
+
+@media (max-width: 800px) {
+
+.encabezado {
+    padding: 0 5%;
+}
+
+.portada {
+    min-height: 550px;
+
+    padding: 60px 7%;
+}
+
+.portada h1 {
+    font-size: 40px;
+}
+
+.seccion {
+    grid-template-columns: 1fr;
+
+    padding: 60px 25px;
+
+    gap: 35px;
+}
+
+.tarjetas {
+    grid-template-columns: 1fr;
+}
+
+nav {
+    gap: 15px;
+}
+
+}
