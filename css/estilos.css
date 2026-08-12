@@ -1,368 +1,678 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
 
-body {
-font-family: Arial, sans-serif;
-background-color: #f4f7f5;
-color: #26352d;
-line-height: 1.6;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f5;
+    color: #26352d;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 /* =========================
-ENCABEZADO
+   ENCABEZADO
 ========================= */
 
 .encabezado {
-width: 100%;
-height: 70px;
+    width: 100%;
+    min-height: 70px;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-display: flex;
-justify-content: space-between;
-align-items: center;
+    padding: 15px 7%;
 
-padding: 0 7%;
+    background-color: white;
 
-background-color: white;
+    border-bottom: 1px solid #dce5df;
 
-border-bottom: 1px solid #dce5df;
-
-position: relative;
-z-index: 10;
+    position: relative;
+    z-index: 10;
 }
 
 .logo {
-font-size: 22px;
-font-weight: bold;
-color: #23613c;
+    font-size: 22px;
+    font-weight: bold;
+    color: #23613c;
 }
 
 nav {
-display: flex;
-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
 nav a {
-text-decoration: none;
-color: #26352d;
-font-weight: bold;
+    color: #26352d;
+    font-weight: bold;
 }
 
 nav a:hover {
-color: #2f7d4a;
+    color: #2f7d4a;
 }
 
+
 /* =========================
-PORTADA
+   PORTADA
 ========================= */
 
 .portada {
-min-height: 600px;
+    min-height: 600px;
 
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 
-padding: 80px 8%;
+    padding: 80px 8%;
 
-background-image:
-    linear-gradient(
-        rgba(20, 50, 35, 0.65),
-        rgba(20, 50, 35, 0.65)
-    ),
-    url("../img/cordoba.jpg");
+    background-image:
+        linear-gradient(
+            rgba(20, 50, 35, 0.65),
+            rgba(20, 50, 35, 0.65)
+        ),
+        url("../img/cordoba.jpeg");
 
-background-size: cover;
-background-position: center;
+    background-size: cover;
+    background-position: center;
 
-color: white;
-
+    color: white;
 }
 
 .contenido-portada {
-max-width: 700px;
+    max-width: 700px;
 }
 
 .subtitulo {
-font-size: 14px;
-letter-spacing: 3px;
-margin-bottom: 15px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
 }
 
 .portada h1 {
-font-size: 55px;
-line-height: 1.1;
-margin-bottom: 25px;
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 25px;
 }
 
 .portada p {
-font-size: 18px;
-margin-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
+
 /* =========================
-BOTONES
+   BOTONES
 ========================= */
 
 .boton {
-display: inline-block;
+    display: inline-block;
 
+    padding: 13px 25px;
 
-padding: 13px 25px;
+    background-color: #2f7d4a;
+    color: white;
 
-background-color: #2f7d4a;
-color: white;
+    border-radius: 6px;
 
-text-decoration: none;
+    font-weight: bold;
 
-border-radius: 6px;
-
-font-weight: bold;
-
+    transition: 0.3s;
 }
 
 .boton:hover {
-background-color: #23613c;
+    background-color: #23613c;
+    transform: translateY(-2px);
 }
 
 .secundario {
-margin-top: 15px;
+    background-color: #527a62;
 }
 
+
 /* =========================
-SECCIONES
+   SECCIONES
 ========================= */
 
 .seccion {
-max-width: 1150px;
+    max-width: 1150px;
 
+    margin: auto;
 
-margin: auto;
+    padding: 90px 30px;
 
-padding: 90px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-display: grid;
-grid-template-columns: 1fr 1fr;
+    gap: 60px;
 
-gap: 60px;
+    align-items: center;
+}
 
-align-items: center;
-
-
+.texto {
+    max-width: 650px;
 }
 
 .etiqueta {
-color: #2f7d4a;
+    color: #2f7d4a;
 
+    font-size: 13px;
 
-font-size: 13px;
+    font-weight: bold;
 
-font-weight: bold;
+    letter-spacing: 2px;
 
-letter-spacing: 2px;
-
-margin-bottom: 10px;
-
-
+    margin-bottom: 10px;
 }
 
 h2 {
-font-size: 36px;
-line-height: 1.2;
+    font-size: 36px;
+    line-height: 1.2;
 
-margin-bottom: 20px;
-
+    margin-bottom: 20px;
 }
 
 .texto p {
-margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
+
 /* =========================
-DATO
+   DATO DESTACADO
 ========================= */
 
 .dato {
-background-color: #e2eee6;
+    background-color: #e2eee6;
 
-padding: 45px;
+    padding: 45px;
 
-border-radius: 12px;
+    border-radius: 12px;
 
-border-left: 6px solid #2f7d4a;
-
-
+    border-left: 6px solid #2f7d4a;
 }
 
 .dato span {
-font-size: 45px;
+    font-size: 45px;
 }
 
 .dato h3 {
-font-size: 25px;
-margin: 15px 0;
+    font-size: 25px;
+    margin: 15px 0;
 }
 
+
 /* =========================
-MAPA
+   MAPA
 ========================= */
 
 .mapa {
-background-color: white;
+    max-width: 100%;
 
+    padding-left: 8%;
+    padding-right: 8%;
 
-max-width: 100%;
-
-padding-left: 8%;
-padding-right: 8%;
-
+    background-color: white;
 }
 
 .mapa-imagen img {
-width: 100%;
+    width: 100%;
 
+    border-radius: 12px;
 
-display: block;
-
-border-radius: 12px;
-
-box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
+
 /* =========================
-TARJETAS
+   DESTACADAS
 ========================= */
 
 .destacadas {
-max-width: 1150px;
+    max-width: 1150px;
 
-margin: auto;
+    margin: auto;
 
-padding: 90px 30px;
-
-
+    padding: 90px 30px;
 }
 
 .destacadas > h2 {
-margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
+
+/* =========================
+   TARJETAS
+========================= */
+
 .tarjetas {
-display: grid;
+    display: grid;
 
+    grid-template-columns: repeat(3, 1fr);
 
-grid-template-columns: repeat(3, 1fr);
-
-gap: 25px;
-
-
+    gap: 25px;
 }
 
 .tarjeta {
-background-color: white;
+    background-color: white;
 
+    padding: 30px;
 
-padding: 30px;
+    border-radius: 10px;
 
-border-radius: 10px;
+    border: 1px solid #e1e8e3;
 
-border: 1px solid #e1e8e3;
-
-transition: 0.3s;
-
+    transition: 0.3s;
 }
 
 .tarjeta:hover {
-transform: translateY(-6px);
+    transform: translateY(-6px);
 
-box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-
-
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .icono {
-font-size: 40px;
+    font-size: 40px;
 
-
-margin-bottom: 15px;
-
+    margin-bottom: 15px;
 }
 
 .tarjeta h3 {
-font-size: 22px;
+    font-size: 22px;
 
+    margin-bottom: 10px;
 
-margin-bottom: 10px;
-
-color: #23613c;
-
-
+    color: #23613c;
 }
 
+.tarjeta .boton {
+    margin-top: 15px;
+
+    font-size: 14px;
+
+    padding: 9px 15px;
+}
+
+
 /* =========================
-FOOTER
+   PÁGINAS INTERNAS
+========================= */
+
+.titulo-pagina {
+    background-color: #1f3b2b;
+
+    color: white;
+
+    padding: 80px 8%;
+
+    text-align: center;
+}
+
+.titulo-pagina h1 {
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+.titulo-pagina p {
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   PROBLEMÁTICAS
+========================= */
+
+.problemas {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+}
+
+.problema {
+    background-color: white;
+
+    margin-bottom: 30px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.problema img {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 280px;
+
+    object-fit: cover;
+}
+
+.problema-contenido {
+    padding: 35px;
+}
+
+.problema-contenido h2 {
+    color: #23613c;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.ubicacion {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background-color: #e2eee6;
+
+    color: #23613c;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CASOS REALES
+========================= */
+
+.casos {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+}
+
+.caso {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background-color: white;
+
+    margin-bottom: 40px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.caso img {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 320px;
+
+    object-fit: cover;
+}
+
+.caso-contenido {
+    padding: 40px;
+}
+
+.caso-contenido h2 {
+    color: #23613c;
+}
+
+.caso-contenido h3 {
+    color: #527a62;
+
+    margin-top: 20px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.galeria {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+}
+
+.fotos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.foto {
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.foto img {
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+}
+
+.foto p {
+    padding: 15px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   DATOS
+========================= */
+
+.datos {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+}
+
+.dato-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    border-top: 5px solid #2f7d4a;
+
+    text-align: center;
+}
+
+.dato-card span {
+    display: block;
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+.dato-card h3 {
+    margin-bottom: 10px;
+
+    color: #23613c;
+}
+
+
+/* =========================
+   FUENTES
+========================= */
+
+.fuentes {
+    background-color: #e2eee6;
+
+    padding: 50px 30px;
+
+    text-align: center;
+}
+
+.fuentes ul {
+    list-style: none;
+
+    margin-top: 20px;
+}
+
+.fuentes li {
+    margin: 8px;
+}
+
+
+/* =========================
+   FOOTER
 ========================= */
 
 footer {
-background-color: #1f3b2b;
+    background-color: #1f3b2b;
 
-color: white;
+    color: white;
 
-text-align: center;
+    text-align: center;
 
-padding: 40px 20px;
-
-
+    padding: 40px 20px;
 }
 
 footer h3 {
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 footer p {
-font-size: 14px;
+    font-size: 14px;
 
-margin: 5px;
-
+    margin: 5px;
 }
 
+
 /* =========================
-CELULARES
+   CELULARES
 ========================= */
 
 @media (max-width: 800px) {
 
-.encabezado {
-    padding: 0 5%;
-}
+    .encabezado {
+        flex-direction: column;
 
-.portada {
-    min-height: 550px;
+        gap: 12px;
 
-    padding: 60px 7%;
-}
+        padding: 15px 5%;
+    }
 
-.portada h1 {
-    font-size: 40px;
-}
+    nav {
+        gap: 15px;
 
-.seccion {
-    grid-template-columns: 1fr;
+        font-size: 14px;
+    }
 
-    padding: 60px 25px;
+    .portada {
+        min-height: 550px;
 
-    gap: 35px;
-}
+        padding: 60px 7%;
+    }
 
-.tarjetas {
-    grid-template-columns: 1fr;
-}
+    .portada h1 {
+        font-size: 40px;
+    }
 
-nav {
-    gap: 15px;
-}
+    .portada p {
+        font-size: 16px;
+    }
 
+    .seccion {
+        grid-template-columns: 1fr;
+
+        padding: 60px 25px;
+
+        gap: 35px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .problema {
+        grid-template-columns: 1fr;
+    }
+
+    .problema img {
+        height: 250px;
+    }
+
+    .caso {
+        grid-template-columns: 1fr;
+    }
+
+    .caso img {
+        min-height: 250px;
+    }
+
+    .fotos {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-pagina {
+        padding: 60px 20px;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
 }
