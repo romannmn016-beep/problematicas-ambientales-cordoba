@@ -12,54 +12,42 @@
 
 <body>
 
-    <!-- ENCABEZADO -->
+    <!-- ================= HEADER ================= -->
 
- <header class="header">
+    <header class="header">
 
-    <div class="logo">
-        <a href="index.html">🌎 CÓRDOBA AMBIENTAL</a>
-    </div>
+        <div class="logo">
+            <a href="index.html">🌎 CÓRDOBA AMBIENTAL</a>
+        </div>
 
-    <!-- Botón del menú -->
-    <input type="checkbox" id="menu-toggle">
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="cordoba.html">Córdoba</a>
+            <a href="problematicas.html">Problemáticas</a>
+            <a href="casos.html">Casos reales</a>
+            <a href="dean-funes.html">Deán Funes</a>
+            <a href="soluciones.html">Soluciones</a>
+            <a href="galeria.html">Galería</a>
+            <a href="glosario.html">Glosario</a>
+        </nav>
 
-    <label for="menu-toggle" class="menu-icon">
-        ☰
-    </label>
-
-    <!-- Menú -->
-    <nav class="nav">
-
-        <a href="index.html">Inicio</a>
-        <a href="cordoba.html">Córdoba</a>
-        <a href="problematicas.html">Problemáticas</a>
-        <a href="casos.html">Casos reales</a>
-        <a href="dean-funes.html">Deán Funes</a>
-        <a href="soluciones.html">Soluciones</a>
-        <a href="galeria.html">Galería</a>
-        <a href="glosario.html">Glosario</a>
-
-    </nav>
-
-</header>
+    </header>
 
 
-    <!-- PORTADA -->
+    <!-- ================= HERO ================= -->
 
     <section class="hero dean-hero">
 
         <div class="hero-contenido">
 
-            <p class="etiqueta">GEOGRAFÍA • DEÁN FUNES</p>
+            <span class="etiqueta">CASO LOCAL</span>
 
-            <h1>
-                Problemáticas ambientales
-                en Deán Funes
-            </h1>
+            <h1>Problemáticas ambientales en Deán Funes</h1>
 
             <p>
-                Un recorrido por los principales problemas ambientales
-                de nuestra ciudad y su relación con el territorio.
+                Una mirada sobre la contaminación por residuos,
+                los basurales a cielo abierto y la participación
+                de la comunidad.
             </p>
 
         </div>
@@ -67,57 +55,75 @@
     </section>
 
 
-    <!-- INTRODUCCIÓN -->
+    <main>
 
-    <section class="seccion">
 
-        <div class="titulo-seccion">
+        <!-- ================= INTRODUCCIÓN ================= -->
 
-            <span>01</span>
+        <section class="seccion">
 
-            <div>
-                <h2>Residuos y basurales</h2>
+            <div class="contenedor">
+
+                <span class="etiqueta-verde">DEÁN FUNES</span>
+
+                <h2>Una problemática de nuestra ciudad</h2>
+
+                <p class="texto-intro">
+                    La acumulación y disposición inadecuada de residuos
+                    constituye una problemática ambiental importante
+                    en Deán Funes.
+                </p>
 
                 <p>
-                    Una problemática ambiental presente en nuestra ciudad.
+                    El problema no se relaciona solamente con la cantidad
+                    de basura generada, sino también con la manera en que
+                    se recolecta, separa, trata y dispone finalmente.
                 </p>
+
+                <p>
+                    Esta situación permite observar cómo una problemática
+                    ambiental también puede convertirse en una problemática
+                    social, ya que requiere la participación del Estado,
+                    los vecinos, comercios, instituciones y empresas.
+                </p>
+
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="texto-destacado">
+        <!-- ================= FOTO ================= -->
 
-            <p>
-                La acumulación y disposición inadecuada de residuos
-                constituye una problemática ambiental importante en
-                Deán Funes.
-            </p>
+        <section class="seccion fondo-suave">
 
-            <p>
-                El problema no se limita solamente a la cantidad de
-                basura generada, sino también a cómo se recolecta,
-                separa, trata y dispone finalmente.
-            </p>
+            <div class="contenedor">
 
-        </div>
+                <div class="imagen-destacada">
 
-    </section>
+                    <img src="img/cordoba.jpeg"
+                        alt="Paisaje de Deán Funes y su entorno">
+
+                    <p class="fuente-foto">
+                        Imagen ilustrativa. Fuente: agregar referencia
+                        de la fotografía utilizada.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-    <!-- BASURALES -->
+        <!-- ================= BASURALES ================= -->
 
-    <section class="seccion gris">
+        <section class="seccion">
 
-        <div class="contenido-dos-columnas">
+            <div class="contenedor">
 
-            <div>
+                <span class="etiqueta-verde">EL PROBLEMA</span>
 
-                <p class="numero">01</p>
-
-                <h2>
-                    Basurales a cielo abierto
-                </h2>
+                <h2>Basurales a cielo abierto</h2>
 
                 <p>
                     Los basurales a cielo abierto son espacios donde
@@ -127,389 +133,425 @@
                 </p>
 
                 <p>
-                    Estos lugares pueden generar contaminación del
-                    suelo y del agua mediante los lixiviados, además
-                    de producir gases y contaminación atmosférica.
+                    En estos lugares pueden acumularse bolsas, plásticos,
+                    cartón, papel, metales, residuos domiciliarios,
+                    restos de poda, escombros y residuos voluminosos.
                 </p>
+
+                <div class="tarjetas-info">
+
+                    <div class="tarjeta-info">
+                        <span>🌱</span>
+                        <h3>Suelo</h3>
+                        <p>
+                            Los residuos pueden liberar sustancias durante
+                            su descomposición y afectar las propiedades
+                            del suelo.
+                        </p>
+                    </div>
+
+                    <div class="tarjeta-info">
+                        <span>💧</span>
+                        <h3>Agua</h3>
+                        <p>
+                            Los lixiviados pueden infiltrarse en el suelo
+                            y, dependiendo de las condiciones, alcanzar
+                            aguas subterráneas.
+                        </p>
+                    </div>
+
+                    <div class="tarjeta-info">
+                        <span>🌫️</span>
+                        <h3>Aire</h3>
+                        <p>
+                            La quema y descomposición de residuos puede
+                            generar humo y diferentes gases.
+                        </p>
+                    </div>
+
+                    <div class="tarjeta-info">
+                        <span>🐀</span>
+                        <h3>Fauna urbana</h3>
+                        <p>
+                            La acumulación de residuos puede atraer
+                            roedores, insectos y otros animales.
+                        </p>
+                    </div>
+
+                </div>
 
             </div>
 
-
-            <div class="imagen-contenedor">
-
-                <!-- ACÁ PODÉS PONER UNA FOTO -->
-
-                <img src="img/basural-dean-funes.jpg"
-                     alt="Basural a cielo abierto en Deán Funes">
-
-                <p class="pie-imagen">
-                    Basural a cielo abierto en Deán Funes.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- PRINCIPALES PROBLEMAS -->
+        <!-- ================= VILLA MATILDE ================= -->
 
-    <section class="seccion">
+        <section class="seccion fondo-verde">
 
-        <div class="titulo-seccion">
+            <div class="contenedor">
 
-            <span>02</span>
+                <span class="etiqueta-clara">CASO CONCRETO</span>
 
-            <div>
-
-                <h2>
-                    ¿Qué problemas generan?
-                </h2>
+                <h2>Basural de barrio Villa Matilde</h2>
 
                 <p>
-                    La acumulación de residuos puede producir
-                    diferentes impactos ambientales y sociales.
+                    En mayo de 2025 se realizó una jornada de limpieza
+                    de un basural a cielo abierto ubicado en barrio
+                    Villa Matilde, en la ciudad de Deán Funes.
                 </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="tarjetas">
-
-
-            <article class="tarjeta">
-
-                <div class="icono">🌱</div>
-
-                <h3>Contaminación del suelo</h3>
 
                 <p>
-                    Los residuos pueden liberar sustancias durante
-                    su descomposición. Los lixiviados pueden
-                    infiltrarse en el suelo y alcanzar aguas
-                    subterráneas.
+                    La intervención permitió retirar residuos acumulados
+                    y recuperar el espacio. Sin embargo, la limpieza por
+                    sí sola no resuelve definitivamente el problema:
+                    también es necesario evitar que el lugar vuelva a
+                    utilizarse como punto de descarte.
                 </p>
 
-            </article>
+                <div class="dato-importante">
+
+                    <strong>📍 ¿Qué nos muestra este caso?</strong>
+
+                    <p>
+                        Que la gestión de residuos necesita continuidad
+                        y participación comunitaria. La responsabilidad
+                        no corresponde únicamente al municipio: también
+                        involucra a los vecinos y a las instituciones.
+                    </p>
+
+                </div>
+
+                <p class="fuente-caso">
+                    Fuente: Córdoba Interior Informa, 13 de mayo de 2025.
+                </p>
+
+            </div>
+
+        </section>
 
 
-            <article class="tarjeta">
+        <!-- ================= CONSECUENCIAS ================= -->
 
-                <div class="icono">💨</div>
+        <section class="seccion">
 
-                <h3>Contaminación del aire</h3>
+            <div class="contenedor">
+
+                <span class="etiqueta-verde">CONSECUENCIAS</span>
+
+                <h2>¿Qué problemas pueden generar los basurales?</h2>
+
+                <div class="lista-problemas">
+
+                    <div>
+                        <strong>🌱 Contaminación del suelo</strong>
+                        <p>
+                            Los residuos pueden liberar sustancias
+                            contaminantes durante su descomposición.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>💧 Contaminación del agua</strong>
+                        <p>
+                            Los líquidos generados por los residuos
+                            pueden infiltrarse en el terreno.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>🌫️ Contaminación del aire</strong>
+                        <p>
+                            La quema de residuos libera humo y
+                            contaminantes a la atmósfera.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>👀 Contaminación visual</strong>
+                        <p>
+                            La acumulación de basura modifica el paisaje
+                            y deteriora espacios urbanos y naturales.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>🐜 Proliferación de animales e insectos</strong>
+                        <p>
+                            Los residuos orgánicos pueden atraer moscas,
+                            roedores y otros animales.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>⚠️ Riesgos para las personas</strong>
+                        <p>
+                            La acumulación de residuos puede generar
+                            riesgos de accidentes y exposición a
+                            materiales contaminantes.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RECICLAJE ================= -->
+
+        <section class="seccion fondo-suave">
+
+            <div class="contenedor">
+
+                <span class="etiqueta-verde">UNA ALTERNATIVA</span>
+
+                <h2>Reciclaje y economía circular</h2>
 
                 <p>
-                    La quema de residuos libera humo y diferentes
-                    contaminantes. Además, la descomposición de
-                    residuos orgánicos genera gases.
+                    El reciclaje permite recuperar materiales que pueden
+                    volver a utilizarse como materia prima, reduciendo
+                    la cantidad de residuos que terminan en los sitios
+                    de disposición final.
                 </p>
-
-            </article>
-
-
-            <article class="tarjeta">
-
-                <div class="icono">👀</div>
-
-                <h3>Contaminación visual</h3>
 
                 <p>
-                    La acumulación de basura modifica el paisaje
-                    y deteriora los espacios naturales y urbanos.
+                    La economía circular propone reducir el modelo
+                    tradicional de producir, consumir y desechar.
+                    En su lugar, busca reducir el consumo, reutilizar
+                    productos y recuperar materiales.
                 </p>
 
-            </article>
+                <div class="economia-circular">
+
+                    <div>
+                        <span>1</span>
+                        <h3>Reducir</h3>
+                        <p>
+                            Comprar solamente lo necesario y disminuir
+                            los productos descartables.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>2</span>
+                        <h3>Reutilizar</h3>
+                        <p>
+                            Dar nuevos usos a objetos y materiales antes
+                            de convertirlos en residuos.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>3</span>
+                        <h3>Reciclar</h3>
+                        <p>
+                            Recuperar materiales para que puedan
+                            transformarse nuevamente.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-            <article class="tarjeta">
+        <!-- ================= SOLUCIONES ================= -->
 
-                <div class="icono">🐀</div>
+        <section class="seccion">
 
-                <h3>Animales e insectos</h3>
+            <div class="contenedor">
+
+                <span class="etiqueta-verde">¿QUÉ PODEMOS HACER?</span>
+
+                <h2>Una solución necesita a toda la comunidad</h2>
+
+                <div class="acciones-locales">
+
+                    <article>
+
+                        <span>🏠</span>
+
+                        <h3>Desde los hogares</h3>
+
+                        <ul>
+                            <li>Separar los residuos reciclables.</li>
+                            <li>Reducir productos descartables.</li>
+                            <li>Reutilizar materiales.</li>
+                            <li>No arrojar basura en terrenos baldíos.</li>
+                            <li>Respetar los horarios de recolección.</li>
+                            <li>Realizar compostaje cuando sea posible.</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>🏛️</span>
+
+                        <h3>Desde el municipio</h3>
+
+                        <ul>
+                            <li>Fortalecer los programas de reciclaje.</li>
+                            <li>Controlar los microbasurales.</li>
+                            <li>Mejorar la gestión de residuos.</li>
+                            <li>Promover la educación ambiental.</li>
+                            <li>Evitar nuevos basurales a cielo abierto.</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>🏪</span>
+
+                        <h3>Desde comercios y empresas</h3>
+
+                        <ul>
+                            <li>Gestionar correctamente sus residuos.</li>
+                            <li>Reducir materiales descartables.</li>
+                            <li>Favorecer la reutilización.</li>
+                            <li>Participar de programas de reciclaje.</li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PARTICIPACIÓN ================= -->
+
+        <section class="seccion fondo-verde">
+
+            <div class="contenedor centrado">
+
+                <span class="etiqueta-clara">PARTICIPACIÓN CIUDADANA</span>
+
+                <h2>El ambiente también es responsabilidad de todos</h2>
 
                 <p>
-                    Los residuos orgánicos pueden atraer moscas,
-                    roedores, perros y otros animales.
+                    La educación ambiental permite comprender las
+                    consecuencias de nuestras acciones y adoptar
+                    hábitos más responsables.
                 </p>
-
-            </article>
-
-
-            <article class="tarjeta">
-
-                <div class="icono">⚠️</div>
-
-                <h3>Riesgos para las personas</h3>
 
                 <p>
-                    Los basurales pueden generar accidentes y
-                    exposición a materiales potencialmente
-                    contaminantes.
+                    Separar residuos, reciclar, reutilizar, compostar
+                    y evitar arrojar basura en lugares no autorizados
+                    son pequeñas acciones que, realizadas de forma
+                    constante y colectiva, pueden generar cambios.
                 </p>
 
-            </article>
+            </div>
+
+        </section>
 
 
-            <article class="tarjeta">
+        <!-- ================= INFORMACIÓN MUNICIPAL ================= -->
 
-                <div class="icono">🌧️</div>
+        <section class="seccion">
 
-                <h3>Contaminación del agua</h3>
+            <div class="contenedor">
+
+                <div class="aviso">
+
+                    <strong>🌱 Ambiente en Deán Funes</strong>
+
+                    <p>
+                        La Subsecretaría de Ambiente de Deán Funes informa
+                        que entre sus actividades se encuentran la educación
+                        ambiental, la reforestación, la protección de la
+                        biodiversidad y programas relacionados con la
+                        separación y recuperación de residuos.
+                    </p>
+
+                    <p>
+                        También se menciona la recolección de plásticos
+                        mediante contenedores, cuyos materiales son
+                        procesados para la construcción de adoquines
+                        ecológicos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONCLUSIÓN ================= -->
+
+        <section class="seccion fondo-suave">
+
+            <div class="contenedor">
+
+                <span class="etiqueta-verde">CONCLUSIÓN</span>
+
+                <h2>De una problemática local a una oportunidad</h2>
 
                 <p>
-                    La lluvia puede transportar residuos y
-                    sustancias contaminantes hacia otros sectores.
+                    La contaminación producida por los residuos y la
+                    formación de basurales y microbasurales representan
+                    una problemática que afecta el ambiente y la calidad
+                    de vida de la comunidad.
                 </p>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- CASO VILLA MATILDE -->
-
-    <section class="seccion caso-local">
-
-        <div class="caso-texto">
-
-            <p class="etiqueta">
-                CASO CONCRETO • 2025
-            </p>
-
-            <h2>
-                Basural de barrio Villa Matilde
-            </h2>
-
-            <p>
-                En mayo de 2025 se realizó la limpieza de un
-                basural a cielo abierto ubicado en barrio
-                Villa Matilde, en la ciudad de Deán Funes.
-            </p>
-
-            <p>
-                La situación muestra cómo la acumulación de
-                residuos en lugares no destinados para ese fin
-                puede convertirse en un problema ambiental
-                para la comunidad.
-            </p>
-
-            <p>
-                La presencia de basura acumulada puede provocar
-                contaminación del suelo, malos olores,
-                contaminación visual y favorecer la presencia
-                de animales e insectos.
-            </p>
-
-        </div>
-
-
-        <div class="caso-imagen">
-
-            <!-- FOTO DEL CASO VILLA MATILDE -->
-
-            <img src="img/villa-matilde.jpg"
-                 alt="Basural de barrio Villa Matilde">
-
-            <p class="pie-imagen">
-                Barrio Villa Matilde, Deán Funes.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ANÁLISIS GEOGRÁFICO -->
-
-    <section class="seccion gris">
-
-        <div class="titulo-seccion">
-
-            <span>03</span>
-
-            <div>
-
-                <h2>
-                    Una problemática ambiental y social
-                </h2>
-
-            </div>
-
-        </div>
-
-
-        <div class="texto-destacado">
-
-            <p>
-                Este caso permite observar que la problemática
-                de los basurales no es solamente una cuestión
-                ambiental, sino también una cuestión social.
-            </p>
-
-            <p>
-                Para solucionar el problema de manera permanente
-                es necesario evitar que estos espacios vuelvan a
-                utilizarse como puntos de descarte.
-            </p>
-
-            <p>
-                Esto requiere una correcta gestión de los residuos,
-                separación, reciclaje y participación de los vecinos.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- SOLUCIONES -->
-
-    <section class="seccion">
-
-        <div class="titulo-seccion">
-
-            <span>04</span>
-
-            <div>
-
-                <h2>
-                    ¿Qué podemos hacer?
-                </h2>
 
                 <p>
-                    La solución requiere participación de toda
-                    la comunidad.
+                    El caso de Villa Matilde permite observar que limpiar
+                    un espacio es importante, pero también es necesario
+                    prevenir que vuelva a convertirse en un lugar de
+                    descarte.
+                </p>
+
+                <p>
+                    La separación de residuos, la reducción del consumo,
+                    la reutilización, el reciclaje y la educación ambiental
+                    forman parte de una estrategia más amplia para construir
+                    una ciudad más limpia y sostenible.
                 </p>
 
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="lista-soluciones">
-
-            <div>
-                ♻️
-                <strong>Separar</strong>
-                <p>Separar correctamente los residuos reciclables.</p>
-            </div>
-
-            <div>
-                🛍️
-                <strong>Reducir</strong>
-                <p>Disminuir el consumo de productos descartables.</p>
-            </div>
-
-            <div>
-                🔄
-                <strong>Reutilizar</strong>
-                <p>Dar nuevos usos a materiales antes de desecharlos.</p>
-            </div>
-
-            <div>
-                🚯
-                <strong>No arrojar basura</strong>
-                <p>Evitar utilizar terrenos baldíos como puntos de descarte.</p>
-            </div>
-
-            <div>
-                🌱
-                <strong>Compostar</strong>
-                <p>Aprovechar los residuos orgánicos para producir abono.</p>
-            </div>
-
-            <div>
-                📚
-                <strong>Informarse</strong>
-                <p>Conocer la problemática permite tomar mejores decisiones.</p>
-            </div>
-
-        </div>
-
-    </section>
+    </main>
 
 
-    <!-- CONCLUSIÓN -->
+    <!-- ================= FOOTER ================= -->
 
-    <section class="conclusion">
+    <footer class="footer">
 
         <div>
 
-            <p class="etiqueta">CONCLUSIÓN</p>
-
-            <h2>
-                Un problema que también depende de nosotros
-            </h2>
+            <strong>🌎 Córdoba Ambiental</strong>
 
             <p>
-                Reducir la formación de basurales requiere
-                continuidad y participación de toda la comunidad.
-                Separar, reducir, reutilizar y reciclar son acciones
-                que pueden contribuir a construir una ciudad más
-                limpia y sostenible.
+                Proyecto educativo sobre problemáticas ambientales
+                de la provincia de Córdoba.
             </p>
 
         </div>
 
-    </section>
+        <div>
 
+            <strong>Fuentes</strong>
 
-    <!-- FUENTES -->
+            <p>
+                Municipalidad de Deán Funes · Córdoba Interior Informa
+                · Gobierno de Córdoba · Argentina.gob.ar
+            </p>
 
-    <section class="fuentes">
-
-        <h2>Fuentes de información</h2>
-
-        <ul>
-
-            <li>
-                Municipalidad de Deán Funes –
-                Subsecretaría de Ambiente.
-            </li>
-
-            <li>
-                Municipalidad de Deán Funes –
-                Secretaría de Servicios Públicos.
-            </li>
-
-            <li>
-                Municipalidad de Deán Funes –
-                Información sobre gestión de residuos.
-            </li>
-
-            <li>
-                Córdoba Interior Informa –
-                Eliminación de basural a cielo abierto
-                en Villa Matilde.
-            </li>
-
-            <li>
-                Gobierno Nacional –
-                Información sobre basurales a cielo abierto.
-            </li>
-
-        </ul>
-
-    </section>
-
-
-    <!-- PIE -->
-
-    <footer>
-
-        <p>
-            Problemáticas Ambientales de Córdoba
-        </p>
-
-        <p>
-            Proyecto de Geografía • Deán Funes, Córdoba
-        </p>
+        </div>
 
     </footer>
 
